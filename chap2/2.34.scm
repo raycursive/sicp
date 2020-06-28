@@ -1,0 +1,5 @@
+(load "accumulate.scm")
+(define (horner-eval x coeffs)
+  (accumulate (lambda (term acc) (+ term (* acc x))) 0 coeffs)
+)
+; (display (horner-eval 2 (list 1 3 0 5 0 1)))

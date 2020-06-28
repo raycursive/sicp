@@ -1,0 +1,16 @@
+(define (for-each f lst)
+  (if (null? lst)
+    '()
+    (begin
+      (f (car lst))
+      (for-each f (cdr lst))
+    )
+  )
+)
+
+; (for-each (lambda (x)
+            ; (newline)
+            ; (display (+ x 1))
+          ; )
+          ; (list 3 2 1)
+; )

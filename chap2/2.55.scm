@@ -1,0 +1,1 @@
+; (car ''abracadabra) will be interpreted as (quote (quote abracadabra)) = '(quote abracadabra)

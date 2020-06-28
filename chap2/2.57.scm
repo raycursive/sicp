@@ -1,0 +1,10 @@
+; 2.57
+(define (augend s)
+    (if (null? (cdddr s))
+        (caddr s)
+        (cons '+ (cddr a))))
+(define (multiplicand p)
+    (if (null? (cdddr p))
+        (caddr p)
+        (cons '* (cddr p))))
+; (display (deriv '(* x y (+ x 3)) 'x))
